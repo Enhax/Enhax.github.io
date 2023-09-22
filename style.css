@@ -25,13 +25,13 @@
 #treeleft{
     position:absolute;
     left:0%;
-    bottom:5%;
+    bottom:3%;
 }
 
 #treeright{
     position:absolute;
     right:0%;
-    bottom:10%;
+    bottom:7%;
 }
 
 .homepage{
