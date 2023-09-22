@@ -96,6 +96,12 @@
     text-align: justify;
 }
 
+.homicons_flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ----- MOBILE_PAGE_1 ----- */
 
