@@ -585,7 +585,7 @@ nav a{
         height:160px;
         margin:auto;
         text-align: center;
-        z-index:2;
+        z-index:100;
         background:linear-gradient(#3f6077,#333);
     }
 
