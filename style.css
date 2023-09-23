@@ -31,6 +31,7 @@ MOBILE _PAGE_CONTACT        LIGNE 900.
     background-size: cover;
     background-position: bottom;
     position:relative;
+
 }
 
 .header1 nav a{
@@ -46,7 +47,7 @@ MOBILE _PAGE_CONTACT        LIGNE 900.
 #treeright{
     position:absolute;
     right:0%;
-    bottom:7%;
+    bottom:8%;
 }
 
 .homepage{
@@ -117,6 +118,7 @@ MOBILE _PAGE_CONTACT        LIGNE 900.
 
 .home_col h1{
     font-size:26px;
+    z-index:1;
 }
 
 .home_col p{
@@ -575,6 +577,7 @@ nav a{
         height:160px;
         margin:auto;
         text-align: center;
+        z-index:2;
         background:linear-gradient(#3f6077,#333);
     }
 
