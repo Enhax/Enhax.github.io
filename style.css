@@ -636,7 +636,7 @@ nav a{
 @media(max-width:960px){
 
     .diploma_col, .quality_col, .pnc_col, .hobby_col, .gallery, .contact_col, .sub_header2, .contact_col_coord{
-        width:96%;
+        width:95%;
     }
 
     nav{
