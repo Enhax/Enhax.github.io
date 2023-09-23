@@ -56,6 +56,10 @@ html {
     user-select: none;
 }
 
+#html5, #css3, #js{
+    z-index:-200;
+}
+
 .homepage{
     width:100%;
     height:90vh;
