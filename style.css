@@ -2,15 +2,15 @@
 INDEX DE LA PAGE :
 
 PAGE_1                      LIGNE 16,
-MOBILE_PAGE_1               LIGNE 114,
-PAGE_2_CV_GENERAL           LIGNE 158,
-GALLERY_CV_PHOTO            LIGNE 418,
-MOBILE_CV_GALLERY           LIGNE 557,
-FOOTER_CV_GENERAL           LIGNE 571,
-MOBILE_PAGE_CV              LIGNE 634,
-CONTACT_PAGE_3              LIGNE 808,
-FOOTER_PAGE_CONTACT         LIGNE 873,
-MOBILE _PAGE_CONTACT        LIGNE 900.
+MOBILE_PAGE_1               LIGNE 121,
+PAGE_2_CV_GENERAL           LIGNE 166,
+GALLERY_CV_PHOTO            LIGNE 428,
+MOBILE_CV_GALLERY           LIGNE 567,
+FOOTER_CV_GENERAL           LIGNE 581,
+MOBILE_PAGE_CV              LIGNE 644,
+CONTACT_PAGE_3              LIGNE 830,
+FOOTER_PAGE_CONTACT         LIGNE 895,
+MOBILE _PAGE_CONTACT        LIGNE 922.
 */
 
 /* ---------- PAGE_1_ACCUEIL ---------- */
@@ -20,6 +20,10 @@ MOBILE _PAGE_CONTACT        LIGNE 900.
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 .header1{
     width:100%;
@@ -637,7 +641,6 @@ nav a{
         }
     }
     
-
 /* ---------- MOBILE_PAGE_CV ---------- */
 
 @media(max-width:960px){
@@ -689,7 +692,7 @@ nav a{
    .layer:hover h3{
     bottom:40%;
     opacity:1;
-}
+    }
 
     .quality_col p, .pnc_col p, .diploma_col p, .hobby_col p, .gallery p{
         padding-inline: 5%;
