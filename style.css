@@ -259,6 +259,7 @@ nav a{
     display:block;
     overflow:hidden;
     position:relative;
+    text-align: justify;
 }
 
 .quality_col h3{
@@ -333,6 +334,7 @@ nav a{
     display:block;
     overflow:hidden;
     position:relative;
+    text-align: justify;
 }
 
 .pnc_col h3{
@@ -370,6 +372,7 @@ nav a{
     display:block;
     overflow:hidden;
     position:relative;
+    text-align: justify;
 }
 
 .diploma_col h3{
@@ -410,6 +413,7 @@ nav a{
     display:block;
     overflow:hidden;
     position:relative;
+    text-align: justify;
 }
 
 .hobby_col h3{
