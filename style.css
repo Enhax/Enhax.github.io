@@ -42,12 +42,14 @@ MOBILE _PAGE_CONTACT        LIGNE 900.
     position:absolute;
     left:0%;
     bottom:0%;
+    user-select: none;
 }
 
 #treeright{
     position:absolute;
     right:0%;
     bottom:8%;
+    user-select: none;
 }
 
 .homepage{
@@ -365,6 +367,7 @@ nav a{
 .diploma_col h3{
     font-size:20px;
     padding-block:24px;
+    text-align: justify;
 }
 
 .diploma_col p{
