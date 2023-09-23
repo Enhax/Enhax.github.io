@@ -294,6 +294,7 @@ nav a{
 .quality_col .layer h3, .pnc_col .layer h3, .hobby_col .layer h3, .diploma_col .layer h3, .contact_col_coord h3{
     font-weight: 600;
     font-size:30px;
+    text-align: justify;
 }
 
 .layer:hover h3{
@@ -671,6 +672,10 @@ nav a{
         height:80px;
     }
 
+    .hobby_col p{
+        line-height: 33px;
+    }
+
    .gallery h2{
     padding-top:25px;
     padding-bottom: 15px;
@@ -685,6 +690,11 @@ nav a{
 
     .quality_col p, .pnc_col p, .diploma_col p, .hobby_col p, .gallery p{
         padding-inline: 5%;
+        text-align: justify;
+    }
+
+    .quality_col p, .pnc_col{
+        line-height: 30px;
     }
 
     .quality h3, .quality p{
