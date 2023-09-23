@@ -265,6 +265,7 @@ nav a{
 .quality_col h3{
     font-size:20px;
     padding-block:12px;
+    text-align: center;
 }
 
 .quality_col p{
@@ -340,6 +341,7 @@ nav a{
 .pnc_col h3{
     font-size:20px;
     padding-block:12px;
+    text-align: center;
 }
 
 .pnc_col p{
