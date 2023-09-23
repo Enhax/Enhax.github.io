@@ -1,4 +1,19 @@
-/* -------------------------- PAGE_1_ACCUEIL --------------------------- */
+/*
+INDEX DE LA PAGE :
+
+PAGE_1                      LIGNE 16,
+MOBILE_PAGE_1               LIGNE 114,
+PAGE_2_CV_GENERAL           LIGNE 158,
+GALLERY_CV_PHOTO            LIGNE 418,
+MOBILE_CV_GALLERY           LIGNE 557,
+FOOTER_CV_GENERAL           LIGNE 571,
+MOBILE_PAGE_CV              LIGNE 634,
+CONTACT_PAGE_3              LIGNE 808,
+FOOTER_PAGE_CONTACT         LIGNE 873,
+MOBILE _PAGE_CONTACT        LIGNE 900.
+*/
+
+/* ---------- PAGE_1_ACCUEIL ---------- */
 * {
     margin:0px;
     padding:0px;
@@ -96,7 +111,7 @@
     text-align: justify;
 }
 
-/* ----- MOBILE_PAGE_1 ----- */
+/* ---------- MOBILE_PAGE_1 ---------- */
 
 @media(max-width:768px){
 
@@ -140,8 +155,7 @@
 }
 }
 
-/* -------------------------- PAGE_2_CV --------------------------- */
-
+/* ---------- PAGE_2_CV ---------- */
 
 .sub_header{
     width:100%;
@@ -540,7 +554,7 @@ nav a{
         background-position: 0px;
     }
 
-    /* ---------- MEDIA_GALLERY_ONLY ---------- */
+    /* ---------- MOBILE_GALLERY ---------- */
 
     @media(min-width:768px){
 
@@ -554,14 +568,14 @@ nav a{
 
     }
 
-    /* ---------------------------- FOOTER ---------------------------------- */
+    /* ---------- FOOTER_GENERAL ---------- */
 
     .footer{
         width:100%;
         height:160px;
         margin:auto;
         text-align: center;
-        background:linear-gradient(#333 ,#3f6077);
+        background:linear-gradient(#3f6077,#333);
     }
 
     .footer h3{
@@ -617,7 +631,7 @@ nav a{
     }
     
 
-/* ---------------------------- MOBILE ---------------------------------- */
+/* ---------- MOBILE_PAGE_CV ---------- */
 
 @media(max-width:960px){
 
@@ -791,7 +805,7 @@ nav a{
 }
 }
 
-/* ---------- CONTACT_PAGE_3_HEADER ----------*/
+/* ---------- CONTACT_PAGE_3 ----------*/
 
 .sub_header2{
     min-height:60vh;
@@ -804,7 +818,7 @@ nav a{
     position:relative;
 }
 
-.sub_header2 h2{
+#contactmobile{
     margin-top:5%;
     padding-top:5%;
     font-size: 34px;
@@ -816,8 +830,6 @@ nav a{
     font-size: 24px;
     color: #fff;
 }
-
-/* ---------- CONTACT ----------*/
 
 .contact_col_coord{
     flex-basis:40%;
@@ -858,14 +870,14 @@ nav a{
     width:100%;
 }
 
-  /* ---------------------------- FOOTER ---------------------------------- */
+  /* ---------- FOOTER_PAGE_CONTACT ---------- */
 
   .sub_footer2{
     width:100%;
     height:130px;
     margin:auto;
     text-align: center;
-    background:linear-gradient(#333 ,#3f6077);
+    background:linear-gradient(#3f6077,#333);
     display:block;
 }
 
@@ -885,7 +897,7 @@ nav a{
     color: #fff;
 }
 
-/* ---------------------------- MOBILE _PAGE_CONTACT ---------------------------------- */
+/* ---------- MOBILE _PAGE_CONTACT ---------- */
 
 @media(max-width:768px){
 
