@@ -18,6 +18,7 @@ let navLinks = document.getElementById('navLinks');
         window.addEventListener('scroll', ()=> {
         let value = window.scrollY;
 
+        paralax.style.scrollBehavior='smooth';
         paralax.style.marginTop = value * 1.1 + 'px';
         });
 
@@ -26,6 +27,7 @@ let navLinks = document.getElementById('navLinks');
         window.addEventListener('scroll', ()=> {
         let valueX = window.scrollY;
 
+        treeLeft.style.scrollBehavior='smooth';
         treeLeft.style.left = valueX * -1.1 + 'px';
         });
 
@@ -34,6 +36,7 @@ let navLinks = document.getElementById('navLinks');
         window.addEventListener('scroll', ()=> {
         let valueX = window.scrollY;
 
+        treeRight.style.scrollBehavior='smooth';
         treeRight.style.right = valueX * -1.1 + 'px';
         });
 
