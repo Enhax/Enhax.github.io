@@ -43,14 +43,14 @@ html {
 }
 
 #treeleft{
-    position:absolute;
+    position:fixed;
     left:0%;
     bottom:0%;
     user-select: none;
 }
 
 #treeright{
-    position:absolute;
+    position:fixed;
     right:0%;
     bottom:8%;
     user-select: none;
