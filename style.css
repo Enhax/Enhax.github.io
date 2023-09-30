@@ -31,7 +31,7 @@ html {
     margin:auto;
     text-align:center;
     background-color: #333;
-    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,0.1)), url('images/nightbluesky.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(50,10,25,0.1)), url('images/nightbluesky.jpg');
     background-size: cover;
     background-position: bottom;
     position:relative;
@@ -56,8 +56,10 @@ html {
     user-select: none;
 }
 
-#html5, #css3, #js{
+#html5, #css3, #js, #figma, #wordpress{
     z-index:-1000;
+    font-size:40px;
+    padding:6px 16px;
 }
 
 .homepage{
@@ -102,10 +104,11 @@ html {
 
 .apropos{
     margin-block: 5%;
-    flex-basis: 60%;
+    flex-basis: 50%;
     padding:16px;
     font-weight: 300;
-    background-color: #efefef;
+    background-color: #3f6077;
+    opacity:0.9;
     border-radius:10px;
 }
 
@@ -113,13 +116,15 @@ html {
     padding-top:50px;
     font-size: 48px;
     text-align: center;
+    color:white;
 }
 
 .apropos p{
-    padding-block:50px;
+    padding:50px;
     line-height: 40px;
     font-size: 18px;
     text-align: justify;
+    color:white;
 }
 
 /* ---------- MOBILE_PAGE_1 ---------- */
@@ -136,26 +141,31 @@ html {
 }
 
 .apropos{
-    margin-top: 80px;;
-    flex-basis: 95%;
+    margin-top: 80px;
+    padding-inline:3%;
+    flex-basis: 90%;
     height:550px;
-    background-color: #efefef;
+    background-color: #3f6077;
+    opacity:0.9;
     border-radius:10px;
 }
 
 .apropos h2{
+    color:white;
     padding-top:15px;
     font-size: 24px;
     text-align: center;
 }
 
 .apropos p{
+    color:white;
     padding-top:15px;
     text-align: justify;
     padding-inline:12px;
     line-height: 26px;
     font-size: 18px;
     text-align: center;
+    
 }
 
 #treeleft{
@@ -165,6 +175,12 @@ html {
 #treeright{
     display:none;
 }
+
+#html5, #css3, #js, #figma, #wordpress{
+    padding:5px 2px;
+    font-size:30px;
+}
+
 }
 
 /* ---------- PAGE_2_CV ---------- */
@@ -260,6 +276,12 @@ nav a{
     overflow:hidden;
     position:relative;
     text-align: justify;
+    transform: scale(1);
+    transition:1s;
+}
+
+.quality_col:hover{
+    transform: scale(1.1);
 }
 
 .quality_col h3{
@@ -336,11 +358,17 @@ nav a{
     overflow:hidden;
     position:relative;
     text-align: justify;
+    transform: scale(1);
+    transition:1s;
+}
+
+.pnc_col:hover{
+    transform: scale(1.1);
 }
 
 .pnc_col h3{
     font-size:20px;
-    padding-block:12px;
+    padding-top:18px;
     text-align: center;
 }
 
@@ -375,6 +403,12 @@ nav a{
     overflow:hidden;
     position:relative;
     text-align: justify;
+    transform: scale(1);
+    transition:1s;
+}
+
+.diploma_col:hover{
+    transform: scale(1.1);
 }
 
 .diploma_col h3{
@@ -416,6 +450,12 @@ nav a{
     overflow:hidden;
     position:relative;
     text-align: justify;
+    transform: scale(1);
+    transition:1s;
+}
+
+.hobby_col:hover{
+    transform: scale(1.1);
 }
 
 .hobby_col h3{
@@ -428,6 +468,7 @@ nav a{
     line-height:40px;
     font-size:18px;
     padding-block:12px;
+
 }
 
 .hobby_col img{
@@ -619,7 +660,7 @@ nav a{
 
     .rightToLeft{
         animation-name: rightToLeft;
-        animation-duration: 12s;
+        animation-duration: 6s;
         animation-timing-function: linear;
         animation-delay: 0s;
         animation-iteration-count: infinite;
@@ -628,16 +669,16 @@ nav a{
     
     @keyframes rightToLeft {
         from{
-            transform:translateX(5%);
+            transform:translateX(0%);
         }
         to{
-            transform:translateX(-25%);
+            transform:translateX(-10%);
         }
     }
     
     .leftToRight{
         animation-name: leftToRight;
-        animation-duration: 12s;
+        animation-duration: 6s;
         animation-timing-function: linear;
         animation-delay: 0s;
         animation-iteration-count: infinite;
@@ -646,10 +687,10 @@ nav a{
     
     @keyframes leftToRight {
         from{
-            transform:translateX(-5%);
+            transform:translateX(0%);
         }
         to{
-            transform:translateX(25%);
+            transform:translateX(10%);
         }
     }
     
@@ -670,23 +711,23 @@ nav a{
     }
 
     .quality h2, .diploma h2{
-        padding-top:25px;
-        padding-bottom: 15px;
-        font-size:24px;
+        padding-top:20px;
+        padding-bottom: 20px;
+        font-size:22px;
         height:80px;
     }
 
     .pnc h2{
         padding-top:12px;
         padding-bottom: 30px;
-        font-size:24px;
+        font-size:22px;
         height:80px;
     }
 
     .hobby h2{
         padding-top:25px;
         padding-bottom: 15px;
-        font-size:24px;
+        font-size:22px;
         height:80px;
     }
 
@@ -715,16 +756,29 @@ nav a{
         line-height: 30px;
     }
 
-    .quality h3, .quality p{
+    .quality h3{
+        margin-top: 15px;
         font-size: 17px;
+        padding-block:5px;
+    } 
+
+    .quality p{
+        font-size: 16px;
+        margin-bottom: 15px;
     }
 
-    .pnc h3, .pnc p{
+    .pnc h3{
+        margin-top:10px;
+        font-size: 17px;
+    } 
+
+    .pnc p{
         font-size: 17px;
     }
 
     .diploma h3, .diploma p{
         font-size: 17px;
+        margin-top:10px;
         padding-inline:5%;
     }
 
