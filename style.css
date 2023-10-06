@@ -840,7 +840,8 @@ nav a{
         right:-190px;
         height:100%;
         width:190px;
-        background-color: transparent;
+        background:linear-gradient(#333 ,#3f6077);
+        opacity:0.9;
         border: 1px solid rgba(255,255,255,0.5);
         backdrop-filter: blur(10px);
         z-index:1;
@@ -1043,12 +1044,12 @@ nav a{
     max-width:90%;
     max-height: 0px;
     overflow:hidden;
-    background-color: transparent;
+    background:linear-gradient(#333 ,#3f6077);
     backdrop-filter: blur(10px);
     border-radius:6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border:none;
-    z-index:0;
+    z-index:1;
     
 }
 .submenu-height{
