@@ -6,7 +6,7 @@ MOBILE_PAGE_1               LIGNE 121,
 PAGE_2_CV_GENERAL           LIGNE 166,
 GALLERY_CV_PHOTO            LIGNE 428,
 MOBILE_CV_GALLERY           LIGNE 567,
-FOOTER_CV_GENERAL           LIGNE 581,
+FOOTER_CV_GENERAL           LIGNE 634,
 MOBILE_PAGE_CV              LIGNE 644,
 CONTACT_PAGE_3              LIGNE 899,
 FOOTER_PAGE_CONTACT         LIGNE 968,
@@ -635,7 +635,7 @@ nav a{
 
     .footer{
         width:100%;
-        height:160px;
+        height:150px;
         margin:auto;
         text-align: center;
         z-index:100;
@@ -806,7 +806,7 @@ nav a{
 
     .navlinks ul{
         text-align: left;
-        padding-left:10px;
+        padding-left:5px;
     }
     .menu_icons{
         font-size: 30px;
@@ -816,10 +816,6 @@ nav a{
 
     .sub_header{
         overflow:hidden;
-    }
-
-    .navlinks ul{
-        text-align: left;
     }
 
     .navlinks ul li{
@@ -1020,6 +1016,7 @@ nav a{
     .sub_footer2{
         height:140px;
     }
+
 }
 
 @media(min-width:769px) and (max-width:1280px){
@@ -1045,6 +1042,7 @@ nav a{
     max-height: 0px;
     overflow:hidden;
     background:linear-gradient(#333 ,#3f6077);
+    opacity:0.9;
     backdrop-filter: blur(10px);
     border-radius:6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -1071,7 +1069,7 @@ nav a{
     text-decoration: none;
     font-size:20px;
     color:#fff;
-    font-weight: 600;
+    font-weight: 500;
 }
 .submenu ul li hr{
     padding: 15px 0;
@@ -1081,17 +1079,19 @@ nav a{
 @media screen and (max-width:768px){
 
 .navlinks ul li:nth-child(3){
-    font-size:20px;
+    width:100%;
+    font-size:23px;
 }
 #chevron-down{
     margin-bottom:0px;
-    padding-inline:7px;
+    padding-inline:4px;
     color: #fff;
-    font-size: 17px;
+    font-size: 18px;
 }
 .submenu{
+    top:40%;
     left:26%;
-    transform:translate(-50%);
+    transform:translate(-50%,-50%);
 }
 .navlinks ul li a{
     text-shadow: 0 0 3px black;
