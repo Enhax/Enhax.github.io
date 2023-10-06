@@ -40,3 +40,24 @@ let navLinks = document.getElementById('navLinks');
         treeRight.style.right = valueX * -1.1 + 'px';
         });
 
+// ---------- SUB_MENU ----------
+
+let chevronDown = document.getElementById('chevron-down')
+let subMenu = document.querySelector('.submenu')
+
+chevronDown.onclick = function(){
+    subMenu.classList.toggle('submenu-height');
+    
+
+    if(chevronDown.classList.contains('first')){
+        chevronDown.style.transform = 'rotate(0deg)'
+        chevronDown.classList.remove('first')
+        chevronDown.classList.add('second')
+    }
+    else{
+        chevronDown.style.transform = 'rotate(180deg)'
+        chevronDown.classList.remove('second')
+        chevronDown.classList.add('first')
+    }
+}
+

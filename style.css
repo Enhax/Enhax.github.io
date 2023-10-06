@@ -130,7 +130,7 @@ html {
 
 /* ---------- MOBILE_PAGE_1 ---------- */
 
-@media(max-width:768px){
+@media only screen and (max-width:768px){
 
 .home_col h1{
     font-size:26px;
@@ -181,7 +181,6 @@ html {
     padding:5px 2px;
     font-size:30px;
 }
-
 }
 
 /* ---------- PAGE_2_CV ---------- */
@@ -657,6 +656,8 @@ nav a{
 
     .ficons{
         color: #fff;
+        font-size: 20px;
+        padding-inline:10px;
         padding-block: 10px;
     }
 
@@ -1029,6 +1030,73 @@ nav a{
     #treeright{
         display:none;
     }
-
 }
+
+/* ---------- SUB_MENU ---------- */
+
+.submenu{
+    position:absolute;
+    top:100px;
+    right:13%;
+    transform: translate(-50%);
+    width:200px;
+    max-width:90%;
+    max-height: 0px;
+    overflow:hidden;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius:6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border:none;
+    z-index:0;
     
+}
+.submenu-height{
+    border:2px solid rgba(0,0,0,0.5);
+    max-height: 500px;
+}
+
+#chevron-down{
+    margin-bottom:-5px;
+    padding-inline:10px;
+    color: #fff;
+    font-size: 30px;
+}
+.submenu ul li{
+    padding:15px 15px;
+}
+
+.submenu ul li a{
+    text-decoration: none;
+    font-size:20px;
+    color:#fff;
+    font-weight: 600;
+}
+.submenu ul li hr{
+    padding: 15px 0;
+    color: #333;
+}
+
+@media screen and (max-width:768px){
+
+.navlinks ul li:nth-child(3){
+    font-size:20px;
+}
+#chevron-down{
+    margin-bottom:0px;
+    padding-inline:7px;
+    color: #fff;
+    font-size: 17px;
+}
+.submenu{
+    left:26%;
+    transform:translate(-50%);
+}
+.navlinks ul li a{
+    text-shadow: 0 0 3px black;
+}
+.ficons{
+    font-size:15px;
+    padding-inline:10px;
+}
+}
