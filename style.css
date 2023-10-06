@@ -8,9 +8,9 @@ GALLERY_CV_PHOTO            LIGNE 428,
 MOBILE_CV_GALLERY           LIGNE 567,
 FOOTER_CV_GENERAL           LIGNE 581,
 MOBILE_PAGE_CV              LIGNE 644,
-CONTACT_PAGE_3              LIGNE 830,
-FOOTER_PAGE_CONTACT         LIGNE 895,
-MOBILE _PAGE_CONTACT        LIGNE 922.
+CONTACT_PAGE_3              LIGNE 899,
+FOOTER_PAGE_CONTACT         LIGNE 968,
+MOBILE _PAGE_CONTACT        LIGNE 995.
 */
 
 /* ---------- PAGE_1_ACCUEIL ---------- */
@@ -94,6 +94,7 @@ html {
 .home_col h1{
     font-size:50px;
     color:white;
+    user-select: none;
 }
 
 .home_col p{
@@ -413,12 +414,13 @@ nav a{
 
 .diploma_col h3{
     font-size:20px;
+    line-height:25px;
     padding-block:24px;
     text-align: justify;
 }
 
 .diploma_col p{
-    font-size:18px;
+    font-size:19px;
     padding-block:12px;
 }
 
@@ -945,6 +947,10 @@ nav a{
 .contact_col_coord img{
     width:100%;
     display:block;
+}
+
+.contact_col_coord a{
+    text-decoration: none;
 }
 
 .contact{
