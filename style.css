@@ -330,7 +330,9 @@ nav a{
     font-size:30px;
     text-align: justify;
 }
-
+.contact_col iframe{
+    width:85%;
+}
 .layer:hover h3{
     bottom:45%;
     opacity:1;
@@ -960,7 +962,7 @@ nav a{
 }
 
 .contact_col{
-    flex-basis:70%;
+    flex-basis:69%;
     width:100%;
 }
 
@@ -968,7 +970,7 @@ nav a{
 
   .sub_footer2{
     width:100%;
-    height:140px;
+    height:160px;
     margin:auto;
     text-align: center;
     background:linear-gradient(#3f6077,#333);
@@ -1015,6 +1017,10 @@ nav a{
 
     .sub_footer2{
         height:140px;
+    }
+
+    .contact_col iframe{
+        width:fit-content;
     }
 
 }
