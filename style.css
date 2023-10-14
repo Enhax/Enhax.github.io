@@ -635,7 +635,7 @@ nav a{
 
     .footer{
         width:100%;
-        height:150px;
+        height:160px;
         margin:auto;
         text-align: center;
         z-index:100;
@@ -916,7 +916,7 @@ nav a{
 
 .sub_header2 p{
     padding-top:5%;
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -968,7 +968,7 @@ nav a{
 
   .sub_footer2{
     width:100%;
-    height:130px;
+    height:140px;
     margin:auto;
     text-align: center;
     background:linear-gradient(#3f6077,#333);
@@ -1080,13 +1080,14 @@ nav a{
 
 .navlinks ul li:nth-child(3){
     width:100%;
-    font-size:23px;
+    font-size:20px;
+    padding-left:30px;
 }
 #chevron-down{
     margin-bottom:0px;
-    padding-inline:4px;
+    margin-left:0px;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
 }
 .submenu{
     top:40%;
