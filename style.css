@@ -31,8 +31,8 @@ body{
 
 .header1{
     width:100%;
-    height:100vh;
-    margin:auto;
+    min-height:100vh;
+    margin-bottom:auto;
     text-align:center;
     background-color: #333;
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(50,10,25,0.1)), url('images/nightbluesky.jpg');
@@ -68,8 +68,7 @@ body{
 
 .homepage{
     width:100%;
-    height:90vh;
-    margin:auto;
+    height:100vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -144,12 +143,16 @@ body{
 .home_col p{
     font-size: 18px;
 }
+.front-icons{
+    display:flex;
+    align-items:center;
+}
 
 .apropos{
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-bottom:0px;
     padding-inline:3%;
     flex-basis: 90%;
-    height:550px;
     background-color: #3f6077;
     opacity:0.9;
     border-radius:10px;
@@ -164,11 +167,12 @@ body{
 
 .apropos p{
     color:#efefef;
-    padding-top:15px;
+    padding-top:35px;
+    padding-bottom:20px;
     text-align: justify;
     padding-inline:12px;
     line-height: 26px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     
 }
@@ -206,7 +210,7 @@ nav{
 }
 
 #logo{
-    font-size: 26px;
+    font-size: 30px;
     padding-left:5px;
     font-family: 'Inclusive Sans', sans-serif;
 
@@ -653,9 +657,8 @@ nav a{
     .footer{
         width:100%;
         height:160px;
-        margin:auto;
         text-align: center;
-        z-index:100;
+        z-index:1000;
         background:linear-gradient(#3f6077,#333);
         
     }
@@ -721,6 +724,10 @@ nav a{
     .diploma_col, .quality_col, .pnc_col, .hobby_col, .gallery, .contact_col, .sub_header2, .contact_col_coord{
         width:95%;
     }
+    .hobby, .pnc, .quality{
+        padding-bottom:20px;
+    }
+    
 
     nav{
         padding-top:12px;
@@ -784,8 +791,8 @@ nav a{
     }
 
     .quality h3{
-        margin-top: 15px;
-        font-size: 17px;
+        margin-top: 45px;
+        font-size: 16px;
         padding-block:5px;
     } 
 
@@ -796,7 +803,7 @@ nav a{
 
     .pnc h3{
         margin-top:10px;
-        font-size: 17px;
+        font-size: 16px;
     } 
 
     .pnc p{
@@ -804,13 +811,14 @@ nav a{
     }
 
     .diploma h3, .diploma p{
-        font-size: 17px;
+        font-size: 16px;
         margin-top:10px;
         padding-inline:5%;
     }
 
     .hobby h3, .hobby p{
-        font-size: 17px;
+        font-size: 16px;
+        margin-top:20px;
     }
 
     .hobby_col p{
@@ -856,7 +864,6 @@ nav a{
      
         
     }
-
     .navlinks{
         position:fixed;
         top:0;
@@ -869,11 +876,18 @@ nav a{
         backdrop-filter: blur(10px);
         z-index:1;
     }
+    .footer{
+        padding-bottom:30px;
+
+    }
 
     .footer h3, .footer a{
         padding-block:12px;
         font-size: 14px;
         z-index:1000;
+    }
+    .footer p{
+        font-size:14px;
     }
 
     .ficons{
@@ -895,10 +909,10 @@ nav a{
 
 @keyframes rightToLeft {
     from{
-        transform:translateX(3%);
+        transform:translateX(2%);
     }
     to{
-        transform:translateX(-3%);
+        transform:translateX(-2%);
     }
 }
 
@@ -913,10 +927,10 @@ nav a{
 
 @keyframes leftToRight {
     from{
-        transform:translateX(-3%);
+        transform:translateX(-2%);
     }
     to{
-        transform:translateX(3%);
+        transform:translateX(2%);
     }
 }
 }
@@ -1121,8 +1135,9 @@ nav a{
     font-size: 14px;
 }
 .submenu{
-    top:40%;
-    left:26%;
+    width:170px;
+    top:44%;
+    left:23.5%;
     transform:translate(-50%,-50%);
 }
 .navlinks ul li a{
