@@ -39,9 +39,13 @@ body{
     background-size: cover;
     background-position: bottom;
     position:relative;
-
 }
+.header1 #logo{
+    color:#fff;
+}
+
 .header1 nav .navlinks ul li a{
+    font-size:26px;
     color:#fff;
 }
 .header1 nav .navlinks ul li a #chevron-down{
@@ -218,8 +222,6 @@ nav{
     font-size: 40px;
     font-weight: 800;
     font-family: 'Inclusive Sans', sans-serif;
-
-
 }
 
 nav a{
@@ -553,7 +555,8 @@ nav a{
         display:block;
         width:100%;
         transition:.5s;
-        background-color: #efefef; 
+        background-color: #efefef;
+        box-shadow: 0 0 1px black;
     }
 
     .photos:hover{
@@ -988,6 +991,9 @@ nav a{
     position:relative;
     margin-bottom:-100px;
 }
+.sub_header2 #logo{
+    color:#fff;
+}
 .sub_header2 nav ul li a{
     font-weight:500;
     font-size:25px;
@@ -1087,6 +1093,9 @@ nav a{
     padding-top:10px;
     padding-bottom:10px;
 }
+.sub_footer2 .ficons{
+    color: #222;
+}
 
 .sub_footer2 a{
     text-decoration:none;
@@ -1094,7 +1103,7 @@ nav a{
 }
 
 .ficons{
-    color: #222;
+    color: #fff;
 }
 
 /* ---------- MOBILE _PAGE_CONTACT ---------- */
@@ -1209,6 +1218,7 @@ nav a{
     font-size:15px;
     padding-inline:10px;
 }
+.su
 .homepage{
     height:110vh;
 }
