@@ -26,7 +26,7 @@ html {
   }
 
 body{
-    background:#7369ad;
+    background:#222;
 }
 
 .header1{
@@ -41,9 +41,14 @@ body{
     position:relative;
 
 }
-
-.header1 nav a{
-    text-shadow: 0 0 3px black;
+.header1 nav .navlinks ul li a{
+    color:#fff;
+}
+.header1 nav .navlinks ul li a #chevron-down{
+    color:#fff;
+}
+.header1 nav .navlinks ul li::after{
+    background-color: #fff;
 }
 
 #treeleft{
@@ -113,7 +118,7 @@ body{
     font-weight: 300;
     background-color: #3f6077;
     opacity:0.9;
-    border-radius:10px;
+    border-radius:4px;
 }
 
 .apropos h2{
@@ -155,7 +160,7 @@ body{
     flex-basis: 90%;
     background-color: #3f6077;
     opacity:0.9;
-    border-radius:10px;
+    border-radius:4px;
 }
 
 .apropos h2{
@@ -198,28 +203,31 @@ body{
     height:100px;
     margin:auto;
     text-align:center;
-    background-color: #222;
-
+    background-color: gold;
 }
 
 nav{
-    padding-inline:15px;
+    padding:0 3%;
     display:flex;
     justify-content: space-between;
     align-items:center;
+    
 }
 
 #logo{
-    font-size: 35px;
-    padding-left:5px;
+    font-size: 48px;
+    font-weight: 600;
     font-family: 'Inclusive Sans', sans-serif;
+    color:#fff;
+    text-shadow: 0 0 3px black;
 
 }
 
 nav a{
     text-decoration:none;
-    color:#efefef;
-
+    font-size:26px;
+    color:#222;
+    font-weight: 500;
 }
 
 .navlinks{
@@ -234,11 +242,14 @@ nav a{
     text-decoration:none;
     display:inline-block;  
 }
+.sub_header nav .navlinks ul li a .chevron-down{
+    color:#222;
+}
 
 .menu_icons{
     padding:10px;
     font-size: 30px;
-    color: #fff;
+    color: #222;
     display: none;
 }
 
@@ -247,7 +258,7 @@ nav a{
     height:2px;
     width:0%;
     display:block;
-    background-color: #fff;
+    background-color: #222;
     transition:.5s;
 }
 
@@ -259,7 +270,7 @@ nav a{
     width:100%;
     margin:auto;
     text-align: center;
-    background:linear-gradient(90deg,#7369ad 75%, 75%, #222 );
+    background:linear-gradient(90deg,#222 75%, 75%, gold);
     padding-bottom:50px;
 }
 
@@ -267,7 +278,7 @@ nav a{
     padding:50px 0 25px;
     font-size:50px;
     color:#efefef;
-    /* background:linear-gradient(#3f6077 10%, #222,#3f6077 90%); */
+    text-shadow: 0 0 2px black;
 }
 
 .flex_row{
@@ -280,13 +291,13 @@ nav a{
 
 .quality_col{
     flex-basis:35%;
-    border-radius:10px;
     display:block;
     overflow:hidden;
     position:relative;
     text-align: justify;
     transform: scale(1);
     transition:1s;
+    background: #222;
 }
 
 .quality_col:hover{
@@ -308,8 +319,9 @@ nav a{
 
 .quality_col img{
     width:100%;
-    display:block;
-    filter: grayscale(50%);
+    display:flex;
+    flex-direction: column;
+    padding:10px;
 }
 
 .layer{
@@ -319,11 +331,12 @@ nav a{
     width:100%;
     height:100%;
     background-color: transparent;
-    transition:1s; 
+    transition:1s;
 }
 
 .layer:hover{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.4);
+    
 }
 
 .layer h3{
@@ -332,21 +345,21 @@ nav a{
     bottom:0%;
     transform:translate(-50%);
     font-weight: 600;
-    color:#efefef;
+    color:#fff;
     opacity:0;
     transition:.5s;
 }
 
 .quality_col .layer h3, .pnc_col .layer h3, .hobby_col .layer h3, .diploma_col .layer h3, .contact_col_coord h3{
     font-weight: 600;
-    font-size:30px;
+    font-size:36px;
     text-align: justify;
 }
 .contact_col iframe{
     width:85%;
 }
 .layer:hover h3{
-    bottom:45%;
+    bottom:44%;
     opacity:1;
 }
 
@@ -354,7 +367,7 @@ nav a{
     width:100%;
     margin:auto;
     text-align: center;
-    background:linear-gradient(90deg, #222 25%, 25%,#7369ad);
+    background:linear-gradient(90deg, gold 25%, 25%,#222);
     padding-bottom:50px;
 }
 
@@ -362,18 +375,18 @@ nav a{
     padding:50px 0 25px;
     font-size:44px;
     color:#efefef;
-    /* background:linear-gradient(#3f6077 10%, #222,#3f6077 90%); */
+    text-shadow: 0 0 2px black;
 }
 
 .pnc_col{
     flex-basis:35%;
-    border-radius:10px;
     display:block;
     overflow:hidden;
     position:relative;
     text-align: justify;
     transform: scale(1);
     transition:1s;
+    background: #222;
 }
 
 .pnc_col:hover{
@@ -395,15 +408,16 @@ nav a{
 
 .pnc_col img{
     width:100%;
-    display:block;
-    filter: grayscale(50%);
+    display:flex;
+    flex-direction: column;
+    padding:10px;
 }
 
 .diploma{
     width:100%;
     margin:auto;
     text-align: center;
-    background:linear-gradient(90deg, #222 25%, 25%,#7369ad);
+    background:linear-gradient(90deg, gold 25%, 25%,#222);
     padding-bottom:50px;
 }
 
@@ -412,18 +426,19 @@ nav a{
     height:180px;
     font-size:50px;
     color:#efefef;
-    background:linear-gradient(90deg, #222 25%, 25%,#7369ad);
+    text-shadow: 0 0 2px black;
+    background:linear-gradient(90deg, gold 25%, 25%,#222);
 }
 
 .diploma_col{
     flex-basis:35%;
-    border-radius:10px;
     display:block;
     overflow:hidden;
     position:relative;
     text-align: justify;
     transform: scale(1);
     transition:1s;
+    background: #222;
 }
 
 .diploma_col:hover{
@@ -432,8 +447,8 @@ nav a{
 
 .diploma_col h3{
     font-size:20px;
-    line-height:25px;
-    padding-block:24px;
+    line-height:35px;
+    padding-block:30px;
     text-align: justify;
     color:#efefef;
 }
@@ -446,15 +461,16 @@ nav a{
 
 .diploma_col img{
     width:100%;
-    display:block;
-    filter: grayscale(50%);
+    display:flex;
+    flex-direction: column;
+    padding:10px;
 }
 
 .hobby{
     width:100%;
     margin:auto;
     text-align: center;
-    background:linear-gradient(90deg,#7369ad 75%, 75%, #222);
+    background:linear-gradient(90deg,#222 75%, 75%, gold);
     padding-bottom:50px;
 }
 
@@ -462,18 +478,18 @@ nav a{
     padding:50px 0 25px;
     font-size:50px;
     color:#efefef;
+    text-shadow: 0 0 2px black;
 }
 
 .hobby_col{
     flex-basis:35%;
-    border-radius:10px;
-    margin-bottom: 3%;
     display:block;
     overflow:hidden;
     position:relative;
     text-align: justify;
     transform: scale(1);
     transition:1s;
+    background: #222;
 }
 
 .hobby_col:hover{
@@ -496,8 +512,9 @@ nav a{
 
 .hobby_col img{
     width:100%;
-    display:block;
-    filter: grayscale(50%);
+    display:flex;
+    flex-direction: column;
+    padding:10px;
 }
 
 
@@ -508,13 +525,15 @@ nav a{
     padding: 0 2%;
     margin:auto;
     text-align:center;
-    background:#7369ad;
+    background:gold;
+    border: 10px solid #222;
 }
 
 .gallery h2{
     padding:50px 0 25px;
     font-size:50px;
     color: #fff;
+    text-shadow: 0 0 2px black;
 }
 
 
@@ -700,10 +719,10 @@ nav a{
     
     @keyframes rightToLeft {
         from{
-            transform:translateX(0%);
+            transform:translateX(2%);
         }
         to{
-            transform:translateX(-5%);
+            transform:translateX(-2%);
         }
     }
     
@@ -718,10 +737,10 @@ nav a{
     
     @keyframes leftToRight {
         from{
-            transform:translateX(0%);
+            transform:translateX(2%);
         }
         to{
-            transform:translateX(5%);
+            transform:translateX(-2%);
         }
     }
     
@@ -729,7 +748,7 @@ nav a{
 
 @media(max-width:960px){
 
-    .diploma_col, .quality_col, .pnc_col, .hobby_col, .gallery, .contact_col, .sub_header2, .contact_col_coord{
+    .diploma_col, .quality_col, .pnc_col, .hobby_col, .contact_col, .sub_header2, .contact_col_coord{
         width:95%;
     }
     .hobby, .pnc, .quality{
@@ -742,8 +761,10 @@ nav a{
     }
 
     #logo{
-        font-size: 24px;
-        color: #efefef;
+        font-size: 26px;
+        color: #fff;
+        text-shadow: 0 0 3px black;
+
     }
 
     .quality h2, .diploma h2{
@@ -836,7 +857,7 @@ nav a{
     .menu_icons{
         font-size: 30px;
         padding:10px;
-        color: #fff;
+        color: #222;
         display: block;
     }
 
@@ -848,10 +869,14 @@ nav a{
         text-align: left;
         padding-left:5px;
     }
+
     .menu_icons{
         font-size: 30px;
-        color: #fff;
+        color: #222;
         display: block;
+    }
+    .menu_icons.close{
+        color:#fff;
     }
 
     .sub_header{
@@ -878,11 +903,19 @@ nav a{
         right:-190px;
         height:100%;
         width:190px;
-        background:linear-gradient(180deg, #222 25%,#7369ad);
-        opacity:0.9;
+        background:linear-gradient(180deg, #222 25%,gold);
+        opacity:1;
         border: 1px solid rgba(255,255,255,0.5);
         backdrop-filter: blur(10px);
         z-index:1;
+    }
+    .navlinks ul li a{
+        color:#fff;
+        font-size:20px;
+        text-shadow: 0 0 2px black;
+    }
+    .navlinks ul li::after{
+        display:none;
     }
     .footer{
         padding-bottom:30px;
@@ -956,28 +989,46 @@ nav a{
     margin:auto;
     text-align:center;
     position:relative;
+    margin-bottom:-100px;
+}
+.sub_header2 nav ul li a{
+    color:#fff;
+}
+.sub_header2 nav .navlinks ul li a #chevron-down{
+    color:#fff;
+}
+.sub_header2 nav ul li::after{
+    background-color: #fff;
+}
+.sub_header2 nav ul li:hover::after{
+    background-color: #fff;
+}
+.sub_header2 nav .menu_icons{
+    color:#fff;
 }
 
 #contactmobile{
     margin-top:5%;
     padding-top:5%;
     font-size: 34px;
-    color: #fff;
+    color:#fff;
+    text-shadow: 0 0 3px black;
 }
 
 .sub_header2 p{
     padding-top:5%;
     font-size: 18px;
-    color: #fff;
+    color:#fff;
+    text-shadow: 0 0 3px black;
 }
 
 .contact_col_coord{
     flex-basis:40%;
     margin-block: 3%;
-    border-radius:10px;
-    border: 1px solid black;
+    border-radius:4px;
+    border: 1px solid white;
     position:relative;
-    background-color: #f0f2f5;
+    background-color: #222;
     height:100%;
     display:block;
     overflow:hidden;
@@ -986,11 +1037,15 @@ nav a{
 .contact_col_coord h2{
     padding-top:50px;
     font-size: 30px;
+    color:#fff;
+    text-shadow: 0 0 3px black;
 }
 
 .contact_col_coord p{
     font-size: 24px;
     padding:24px;
+    color:#fff;
+    text-shadow: 0 0 3px black;
 }
 
 .contact_col_coord img{
@@ -1000,7 +1055,7 @@ nav a{
 
 .contact_col_coord a{
     text-decoration: none;
-    color: #334;
+    color: #fff;
 }
 
 .contact{
@@ -1008,12 +1063,15 @@ nav a{
     width:100%;
     margin:auto;
     text-align:center;
+    background-color: gold;
 }
 
 .contact_col{
+    padding-top:100px;
     flex-basis:69%;
     width:100%;
 }
+
 
   /* ---------- FOOTER_PAGE_CONTACT ---------- */
 
@@ -1090,18 +1148,15 @@ nav a{
 .submenu{
     position:absolute;
     top:100px;
-    right:13%;
-    transform: translate(-50%);
+    right:17%;
+    transform: translateX(-50%);
     width:200px;
     max-width:90%;
     max-height: 0px;
     overflow:hidden;
     background:#222;
-    opacity:0.9;
-    backdrop-filter: blur(10px);
-    border-radius:6px;
+    opacity:1;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border:none;
     z-index:1;
     
 }
@@ -1113,7 +1168,7 @@ nav a{
 #chevron-down{
     margin-bottom:-5px;
     padding-inline:10px;
-    color: #fff;
+    color: #222;
     font-size: 30px;
 }
 .submenu ul li{
