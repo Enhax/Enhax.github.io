@@ -552,10 +552,7 @@ nav a{
         display:block;
         width:100%;
         transition:.5s;
-        filter: grayscale(50%);
-        background-color: #efefef;
-        
-        
+        background-color: #efefef; 
     }
 
     .photos:hover{
@@ -566,7 +563,6 @@ nav a{
         background-image: url('images/Roma.jpg');
         background-size: cover;
         background-position: 0px;
-
     }
 
     .photo2{
@@ -582,7 +578,7 @@ nav a{
     }
 
     .photo4{
-        background-image: url('images/Climbing.jpg');
+        background-image: url('images/Climbing.webp');
         background-size: cover;
         background-position: 0px;
     }
