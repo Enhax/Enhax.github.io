@@ -215,17 +215,15 @@ nav{
 }
 
 #logo{
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 800;
     font-family: 'Inclusive Sans', sans-serif;
-    color:#fff;
-    text-shadow: 0 0 3px black;
+
 
 }
 
 nav a{
     text-decoration:none;
-    font-size:26px;
     color:#222;
     font-weight: 600;
 }
@@ -236,11 +234,13 @@ nav a{
 }
 
 .navlinks ul li{
-    padding: 30px 36px;
-    font-size: 24px;
+    padding: 30px 30px;
     position:relative;
     text-decoration:none;
     display:inline-block;  
+}
+.sub_header nav .navlinks ul li a{
+    font-size:25px;
 }
 .sub_header nav .navlinks ul li a .chevron-down{
     color:#222;
@@ -446,7 +446,8 @@ nav a{
 }
 
 .diploma_col h3{
-    font-size:24px;
+    font-size:22px;
+    font-weight: 600;
     line-height:35px;
     padding-block:30px;
     text-align: justify;
@@ -785,9 +786,9 @@ nav a{
 
     .hobby h2{
         padding-top:25px;
-        padding-bottom: 15px;
+        padding-bottom: 25px;
         font-size:24px;
-        height:80px;
+        height:75px;
     }
 
     .hobby_col p{
@@ -907,7 +908,7 @@ nav a{
     }
     .navlinks ul li a{
         color:#fff;
-        font-size:20px;
+        font-size:1px;
         text-shadow: 0 0 2px black;
     }
     .navlinks ul li::after{
@@ -988,6 +989,8 @@ nav a{
     margin-bottom:-100px;
 }
 .sub_header2 nav ul li a{
+    font-weight:500;
+    font-size:25px;
     color:#fff;
 }
 .sub_header2 nav .navlinks ul li a #chevron-down{
@@ -1024,7 +1027,7 @@ nav a{
     border-radius:4px;
     border: 1px solid white;
     position:relative;
-    background-color: #222;
+    background-color: #efefef;
     height:100%;
     display:block;
     overflow:hidden;
@@ -1033,15 +1036,13 @@ nav a{
 .contact_col_coord h2{
     padding-top:50px;
     font-size: 30px;
-    color:#fff;
-    text-shadow: 0 0 3px black;
+    color:#222;
 }
 
 .contact_col_coord p{
     font-size: 24px;
     padding:24px;
-    color:#fff;
-    text-shadow: 0 0 3px black;
+    color:#222;
 }
 
 .contact_col_coord img{
@@ -1051,7 +1052,7 @@ nav a{
 
 .contact_col_coord a{
     text-decoration: none;
-    color: #fff;
+    color: #222;
 }
 
 .contact{
@@ -1059,7 +1060,7 @@ nav a{
     width:100%;
     margin:auto;
     text-align:center;
-    background-color: gold;
+    background-color: #222;
 }
 
 .contact_col{
@@ -1076,24 +1077,24 @@ nav a{
     height:160px;
     margin:auto;
     text-align: center;
-    background:#222;
+    background:gold;
     display:block;
 }
 
 .sub_footer2 h3{
     font-size:18px;
-    color:#fff;
+    color:#222;
     padding-top:10px;
     padding-bottom:10px;
 }
 
 .sub_footer2 a{
     text-decoration:none;
-    color: #fff;
+    color: #222;
 }
 
 .ficons{
-    color: #fff;
+    color: #222;
 }
 
 /* ---------- MOBILE _PAGE_CONTACT ---------- */
@@ -1144,7 +1145,7 @@ nav a{
 .submenu{
     position:absolute;
     top:100px;
-    right:19%;
+    right:17%;
     transform: translateX(-50%);
     width:200px;
     max-width:90%;
@@ -1186,7 +1187,7 @@ nav a{
 
 .navlinks ul li:nth-child(3){
     width:100%;
-    font-size:20px;
+    font-size:18px;
     padding-left:30px;
 }
 #chevron-down{
@@ -1210,5 +1211,8 @@ nav a{
 }
 .homepage{
     height:110vh;
+}
+.sub_header nav .navlinks ul li a{
+    font-size:18px;
 }
 }
