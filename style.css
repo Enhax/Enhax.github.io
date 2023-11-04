@@ -1071,7 +1071,9 @@ nav a{
 
 .contact_col_coord img{
     width:100%;
-    display:block;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
 }
 
 .contact_col_coord a{
