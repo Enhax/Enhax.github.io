@@ -116,7 +116,7 @@ body{
 }
 
 .apropos{
-    margin-block: 5%;
+    margin-top: 100px;
     flex-basis: 50%;
     padding:16px;
     font-weight: 300;
@@ -144,6 +144,10 @@ body{
 
 @media only screen and (max-width:768px){
 
+    .header1 nav .menu_icons{
+        color:#fff;
+    }
+
 .home_col h1{
     font-size:26px;
     z-index:1;
@@ -158,7 +162,7 @@ body{
 }
 
 .apropos{
-    margin-top: 60px;
+    margin-top: 200px;
     margin-bottom:0px;
     padding-inline:3%;
     flex-basis: 90%;
@@ -169,19 +173,19 @@ body{
 
 .apropos h2{
     color:#efefef;
-    padding-top:15px;
+    padding-top:10px;
     font-size: 24px;
     text-align: center;
 }
 
 .apropos p{
     color:#efefef;
-    padding-top:35px;
+    padding-top:20px;
     padding-bottom:20px;
     text-align: justify;
     padding-inline:12px;
-    line-height: 26px;
-    font-size: 16px;
+    line-height: 24px;
+    font-size: 15px;
     text-align: center;
     
 }
@@ -528,8 +532,7 @@ nav a{
     padding: 0 2%;
     margin:auto;
     text-align:center;
-    background:gold;
-    border: 10px solid #222;
+    background:#222;
 }
 
 .gallery h2{
@@ -681,28 +684,48 @@ nav a{
 
     /* ---------- FOOTER_GENERAL ---------- */
 
+    .footer1{
+        width:100%;
+        height:160px;
+        text-align: center;
+        z-index:1000;
+        background:#222; 
+    }
     .footer{
         width:100%;
         height:160px;
         text-align: center;
         z-index:1000;
-        background:#222;
-        
+        background:gold; 
     }
 
-    .footer h3{
+    .footer1 h3{
         font-size:18px;
         color:#fff;
         padding-top:30px;
     }
+    .footer h3{
+        font-size:18px;
+        color:#222;
+        padding-top:30px;
+    }
 
-    .footer a{
+    .footer1 a{
         text-decoration:none;
         color: #fff;
     }
-
-    .ficons{
+    .footer a{
+        text-decoration:none;
+        color: #222;
+    }
+    .footer1 .ficons{
         color: #fff;
+        font-size: 20px;
+        padding-inline:10px;
+        padding-block: 10px;
+    }
+    .ficons{
+        color: #222;
         font-size: 20px;
         padding-inline:10px;
         padding-block: 10px;
@@ -761,9 +784,8 @@ nav a{
     }
 
     #logo{
-        font-size: 26px;
-        color: #fff;
-        text-shadow: 0 0 3px black;
+        font-size: 25px;
+        color: #222;
 
     }
 
@@ -903,16 +925,12 @@ nav a{
         right:-190px;
         height:100%;
         width:190px;
-        background:linear-gradient(180deg, #222 25%,gold);
-        opacity:1;
+        background:#222;
         border: 1px solid rgba(255,255,255,0.5);
-        backdrop-filter: blur(10px);
         z-index:1;
     }
     .navlinks ul li a{
         color:#fff;
-        font-size:1px;
-        text-shadow: 0 0 2px black;
     }
     .navlinks ul li::after{
         display:none;
@@ -932,7 +950,7 @@ nav a{
     }
 
     .ficons{
-        color: #fff;
+        color: #222;
     }
 
     .menu_icons{
@@ -1102,10 +1120,6 @@ nav a{
     color: #222;
 }
 
-.ficons{
-    color: #fff;
-}
-
 /* ---------- MOBILE _PAGE_CONTACT ---------- */
 
 @media(max-width:768px){
@@ -1218,11 +1232,14 @@ nav a{
     font-size:15px;
     padding-inline:10px;
 }
-.su
+
 .homepage{
     height:110vh;
 }
 .sub_header nav .navlinks ul li a{
+    font-size:18px;
+}
+.header1 nav .navlinks ul li a{
     font-size:18px;
 }
 }
