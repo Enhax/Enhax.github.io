@@ -76,13 +76,47 @@ body {
 .front-icons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
+
 .front-icons img{
     margin-top:20px;
     padding-right: 20px;
     width:65px;
     color:#fff;
+    transition: transform 0.3s;
+}
+.front-icons img:first-child:hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px blue);
+}
+.front-icons img:nth-child(2):hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px pink);
+}
+.front-icons img:nth-child(3):hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px red);
+}
+.front-icons img:nth-child(4):hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px rgb(2, 240, 248));
+}
+.front-icons img:nth-child(5):hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px gold);
+}
+.front-icons img:nth-child(6):hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px rgb(2, 240, 248));
+}
+.front-icons img:nth-child(7):hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px pink);
+}
+.front-icons img:last-child:hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 15px green);
 }
 
 .homepage {
@@ -117,6 +151,11 @@ body {
     font-size: 54px;
     color: white;
     user-select: none;
+    transition: transform 0.5s;
+}
+.home_col h1:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px gold);
 }
 
 .home_col p {
