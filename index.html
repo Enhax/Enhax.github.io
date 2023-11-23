@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developpeur Web & Mobile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <meta name="robots" content="noindex">
 </head>
+
 <body>
 
     <!---------- HEADER_1 ---------->
 
-    <section class="header1">
+    <section class="header1" id="header1">
         <nav>
-            <a href="index.html"><h2 id="logo">Franck LEROUX</h2></a>
+            <a href="index.html">
+                <h2 id="logo">Franck LEROUX</h2>
+            </a>
             <div class="navlinks" id="navLinks">
                 <ion-icon name="close" class="menu_icons" onclick="closeMenu()"></ion-icon>
                 <ul>
                     <li><a href='index.html'>Accueil</a></li>
                     <li><a href='index.html#anchor' onclick="closeMenu()">A Propos</a></li>
-                    <li><a href='#'>Portfolio<ion-icon id="chevron-down" class="chevron-down" name="chevron-down"></ion-icon></a></li>
+                    <li><a href='#'>Portfolio<ion-icon id="chevron-down" class="chevron-down"
+                                name="chevron-down"></ion-icon></a></li>
                     <li><a href='Mon CV.html'>Mon CV</a></li>
                     <li><a href='contact.html'>Contact</a></li>
                 </ul>
             </div>
             <ion-icon name="menu" class="menu_icons" onclick="openMenu()"></ion-icon>
         </nav>
-            <div class="home_col"  id="paralax">
-            <h1>Developpeur Web & Mobile</h1>
-            <p>- Version 1.0 -<br></p>
-                <div class="front-icons">  
-                    <span><ion-icon id="html5" name="logo-html5" style="color:blue"></ion-icon></span>
-                    <span><ion-icon name="logo-figma" id="figma" style="color:white"></ion-icon></span>
-                    <span><ion-icon id="css3" name="logo-css3" style="color:#db0001"></ion-icon></span>
-                    <span><ion-icon name="logo-wordpress" id="wordpress" style="color:white"></ion-icon></span>
-                    <span><ion-icon id="js" name="logo-javascript" style="color:gold"></ion-icon></span>
-                </div>
+        <div class="home_col" id="paralax">
+            <h1>Developpeur Web</h1>
+            <p>- Version 1.0 -</p>
+            <div class="front-icons">
+                <img src="images/svg/html.svg">
+                <img src="images/svg/figma.svg">
+                <img src="images/svg/css3.svg">               
+                <img src="images/svg/mysql.svg">
+                <img src="images/svg/javascript.svg">
+                <img src="images/svg/php.svg">
+                <img src="images/svg/jmeurise.svg">
+                <img src="images/svg/wordpress.svg">
             </div>
-            <div class="left">
-                <div id="treeleft"><img src="images/treeleft.png"</div>
+        </div>
+        <div class="left">
+            <div id="treeleft"><img src="images/treeleft.png"></div>
             </div>
             <div class="right">
-                <div id="treeright"><img src="images/treeright.png"</div>
-            </div>
-            <div class="submenu first">
-                <ul>
-                    <li><a href ="https://enhax.github.io/TheSocialReed/" target="_blank">SocialReed</a></li>
-                    <hr>
-                    <li><a href ="https://enhax.github.io/UTube/" target="_blank">U Tube</a></li>
-                    <hr>
-                    <li><a href ="https://enhax.github.io/LinkedUp/" target="_blank">LinkedUp</a></li>
-                    <hr>
-                    <li><a href ="https://enhax.github.io/NOTFLIX/" target="_blank">Notflix</a></li>
-                    <hr>
-                    <li><a href ="https://enhax.github.io/Staybnb/" target="_blank">Staybnb</a></li>
-                    <hr>
-                    <li><a href ="https://enhax.github.io/E-book/" target="_blank">E-book</a></li>
-                </ul>
-            </div>
+                <div id="treeright"><img src="images/treeright.png"></div>
+                </div>
+                <div class="submenu first">
+                    <ul>
+                        <li><a href="https://enhax.github.io/TheSocialReed/" target="_blank">SocialReed</a></li>
+                        <hr>
+                        <li><a href="https://enhax.github.io/UTube/" target="_blank">U Tube</a></li>
+                        <hr>
+                        <li><a href="https://enhax.github.io/LinkedUp/" target="_blank">LinkedUp</a></li>
+                        <hr>
+                        <li><a href="https://enhax.github.io/NOTFLIX/" target="_blank">Notflix</a></li>
+                        <hr>
+                        <li><a href="https://enhax.github.io/Staybnb/" target="_blank">Staybnb</a></li>
+                        <hr>
+                        <li><a href="https://enhax.github.io/E-book/" target="_blank">E-book</a></li>
+                    </ul>
+                </div>
     </section>
 
     <!---------- ACCUEIL ---------->
@@ -68,8 +77,13 @@
     <section class="homepage">
         <div class="ground"></div>
         <div class="apropos">
-            <h2  id="anchor">A propos</h2>
-            <p>Je suis actuellement en formation à l'école supérieure du numérique "La MANU" à Compiègne en vue de l'obtention du titre professionnel d'Etat «Développeur Web et Web Mobile» (RNCP 31114, Bac+2).<br> Je suis à la recherche d'une entreprise pour m'accueillir pour un stage obligatoire d'une durée de 40h (durée établie par la région).<br> Je dispose d'une expérience solide du monde professionnel ayant travaillé plusieurs années comme contrôleur qualité et également comme chef de cabine dans l'aviation civile, apportant une attitude professionnelle et un relationnel confirmé.</p>
+            <h2 id="anchor">A propos</h2>
+            <p>Je suis actuellement en formation à l'école supérieure du numérique "La MANU" à Compiègne en vue de
+                l'obtention du titre professionnel d'Etat «Développeur Web et Web Mobile» (RNCP 31114, Bac+2).<br> Je
+                suis à la recherche d'une entreprise pour m'accueillir pour un stage obligatoire d'une durée de 40h
+                (durée établie par la région).<br> Je dispose d'une expérience solide du monde professionnel ayant
+                travaillé plusieurs années comme contrôleur qualité et également comme chef de cabine dans l'aviation
+                civile, apportant une attitude professionnelle et un relationnel confirmé.</p>
         </div>
     </section>
 
@@ -77,15 +91,20 @@
 
     <section class="footer1">
         <h3>Copyright 2023 // Crédits photos : photos libres<br> de droits mises à disposition sur Unsplash</h3>
-        <a href="https://www.facebook.com/login/" target="_blank"><ion-icon class="ficons" name="logo-facebook"></ion-icon></a>
+        <a href="https://www.facebook.com/login/" target="_blank"><ion-icon class="ficons"
+                name="logo-facebook"></ion-icon></a>
         <a href="https://twitter.com/" target="_blank"><ion-icon class="ficons" name="logo-twitter"></ion-icon></a>
-        <a href="https://www.instagram.com/accounts/login/" target="_blank"><ion-icon class="ficons" name="logo-instagram"></ion-icon></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"><ion-icon class="ficons" name="logo-linkedin"></ion-icon></a><br>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"><ion-icon class="ficons"
+                name="logo-instagram"></ion-icon></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank"><ion-icon class="ficons"
+                name="logo-linkedin"></ion-icon></a><br>
         <a href="#" id="ancre">Haut de page</a>
     </section>
-    
+
     <script src="javascript.js"></script>
+    <script src="https://kit.fontawesome.com/f0d3df2a54.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

@@ -41,7 +41,6 @@ let subMenu = document.querySelector('.submenu')
 
 chevronDown.onclick = function(){
     subMenu.classList.toggle('submenu-height');
-    
 
     if(chevronDown.classList.contains('first')){
         chevronDown.style.transform = 'rotate(0deg)'
@@ -54,4 +53,22 @@ chevronDown.onclick = function(){
         chevronDown.classList.add('first')
     }
 }
+
+document.addEventListener('click', (e)=>{
+    
+    let div = document.querySelector('.submenu')
+    let ul = document.querySelector('.submenu > ul')
+    let li = document.querySelectorAll('.submenu > ul > li')
+    let a = document.querySelector('.submenu > ul > li > a')
+    console.log(Array.from(li).filter(test => !e.target));
+    if(e.target != div && e.target != ul && e.target != li && e.target != a && e.target != chevronDown){
+        subMenu.classList.remove('submenu-height');
+        
+        if(chevronDown.classList.contains('first')){
+            chevronDown.style.transform = 'rotate(0deg)'
+            chevronDown.classList.remove('first')
+            chevronDown.classList.add('second')
+        }
+    }
+})
 
