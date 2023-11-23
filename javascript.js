@@ -11,13 +11,13 @@ let navLinks = document.getElementById('navLinks');
         }
 
 
-    /* ----- PARALAX_EFFECT ----- */
+    /* ----- PARALLAX_EFFECT TREES DISABLED IN MOBILE MODE ----- */
 
-        const paralax = document.getElementById('paralax');
+        const parallax = document.getElementById('parallax');
 
         window.addEventListener('scroll', ()=> {
         let value = window.scrollY;
-        paralax.style.marginTop = value * 1.1 + 'px';
+        parallax.style.marginTop = value * 1.1 + 'px';
         });
 
         const treeLeft = document.getElementById('treeleft');
