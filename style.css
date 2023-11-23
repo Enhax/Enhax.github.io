@@ -84,7 +84,7 @@ body {
     padding-right: 20px;
     width:65px;
     color:#fff;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 .front-icons img:first-child:hover{
     transform: scale(1.3);

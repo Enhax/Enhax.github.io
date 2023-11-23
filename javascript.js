@@ -60,7 +60,7 @@ document.addEventListener('click', (e)=>{
     let ul = document.querySelector('.submenu > ul')
     let li = document.querySelectorAll('.submenu > ul > li')
     let a = document.querySelector('.submenu > ul > li > a')
-    console.log(Array.from(li).filter(test => !e.target));
+/*     console.log(Array.from(li).filter(test => !e.target)); */
     if(e.target != div && e.target != ul && e.target != li && e.target != a && e.target != chevronDown){
         subMenu.classList.remove('submenu-height');
         
