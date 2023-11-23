@@ -1240,6 +1240,17 @@ nav a {
 
 @media(max-width:768px) {
 
+    .sub_header2 .navlinks ul li a{
+        font-size: 18px;
+    }
+
+    .sub_header2 .navlinks ul li:nth-child(3) {
+            width: 100%;
+            font-size: 18px;
+            padding-left: 30px;
+        }
+    }
+
     .flex_row {
         flex-direction: column;
         justify-content: center;
