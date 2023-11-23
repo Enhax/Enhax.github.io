@@ -10,6 +10,12 @@ let navLinks = document.getElementById('navLinks');
             navLinks.style.right='-190px';
         }
 
+         document.addEventListener('click', (e)=>{
+            if(e.target != navLinks && e.target != document.getElementsByTagName('LI') && e.target != document.getElementById('openIcon') && e.target != document.getElementById('openIconCV') && e.target != document.getElementById('openIconContact') && e.target != document.getElementById('chevron-down') && e.target != document.getElementsByTagName('A')){
+                navLinks.style.right='-190px';
+            }
+        })
+ 
 
     /* ----- PARALLAX_EFFECT TREES DISABLED IN MOBILE MODE ----- */
 
