@@ -11,7 +11,7 @@ let navLinks = document.getElementById('navLinks');
         }
 
          document.addEventListener('click', (e)=>{
-            if(e.target != navLinks && e.target != document.getElementsByTagName('LI') && e.target != document.getElementById('openIcon') && e.target != document.getElementById('openIconCV') && e.target != document.getElementById('openIconContact') && e.target != document.getElementById('chevron-down') && e.target != document.getElementsByTagName('A')){
+            if(e.target != navLinks && e.target != document.getElementsByTagName('LI') && e.target != document.getElementById('openIcon') && e.target != document.getElementById('openIconCV') && e.target != document.getElementById('openIconContact') && e.target != document.getElementById('chevron-down')){
                 navLinks.style.right='-190px';
             }
         })
@@ -67,7 +67,7 @@ document.addEventListener('click', (e)=>{
     let li = document.querySelectorAll('.submenu > ul > li')
     let a = document.querySelector('.submenu > ul > li > a')
 /*     console.log(Array.from(li).filter(test => !e.target)); */
-    if(e.target != div && e.target != ul && e.target != li && e.target != a && e.target != chevronDown){
+    if(e.target != div && e.target != ul && e.target != li && e.target != a && e.target != chevronDown && e.target != document.getElementsByTagName('LI')){
         subMenu.classList.remove('submenu-height');
         
         if(chevronDown.classList.contains('first')){
